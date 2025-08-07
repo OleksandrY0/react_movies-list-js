@@ -1,5 +1,8 @@
 import './MovieCard.scss';
 
+const IMDB_LOGO_URL =
+  'https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg';
+
 export const MovieCard = ({ movie }) => (
   <div className="card" data-cy="Movie">
     <div className="card-image">
@@ -12,10 +15,7 @@ export const MovieCard = ({ movie }) => (
       <div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
-              alt="imdb"
-            />
+            <img src={IMDB_LOGO_URL} alt="imdb" />
           </figure>
         </div>
 
